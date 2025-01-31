@@ -70,8 +70,10 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.btnCliente = new FontAwesome.Sharp.IconButton();
             this.panelmenuvertical.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -115,12 +117,12 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.btnfiados);
+            this.panel9.Controls.Add(this.btnCliente);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 859);
+            this.panel9.Location = new System.Drawing.Point(0, 865);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel9.Size = new System.Drawing.Size(335, 60);
+            this.panel9.Size = new System.Drawing.Size(335, 91);
             this.panel9.TabIndex = 19;
             // 
             // btnfiados
@@ -136,19 +138,19 @@
             this.btnfiados.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnfiados.IconSize = 30;
             this.btnfiados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnfiados.Location = new System.Drawing.Point(4, 6);
+            this.btnfiados.Location = new System.Drawing.Point(3, 13);
             this.btnfiados.Name = "btnfiados";
             this.btnfiados.Size = new System.Drawing.Size(326, 51);
             this.btnfiados.TabIndex = 7;
             this.btnfiados.Text = "Cancelar Creditos";
             this.btnfiados.UseVisualStyleBackColor = true;
-            this.btnfiados.Visible = false;
             this.btnfiados.Click += new System.EventHandler(this.btnfiados_Click);
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.btnfiados);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 795);
+            this.panel8.Location = new System.Drawing.Point(0, 801);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.panel8.Size = new System.Drawing.Size(335, 64);
@@ -161,7 +163,7 @@
             this.panel7.Location = new System.Drawing.Point(0, 725);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel7.Size = new System.Drawing.Size(335, 70);
+            this.panel7.Size = new System.Drawing.Size(335, 76);
             this.panel7.TabIndex = 17;
             // 
             // btnCategorias
@@ -177,13 +179,12 @@
             this.btnCategorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCategorias.IconSize = 30;
             this.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCategorias.Location = new System.Drawing.Point(6, 13);
+            this.btnCategorias.Location = new System.Drawing.Point(5, 6);
             this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(326, 51);
+            this.btnCategorias.Size = new System.Drawing.Size(328, 61);
             this.btnCategorias.TabIndex = 8;
             this.btnCategorias.Text = "Categorias";
             this.btnCategorias.UseVisualStyleBackColor = true;
-            this.btnCategorias.Visible = false;
             this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // panel6
@@ -209,7 +210,7 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(3, 6);
+            this.iconButton2.Location = new System.Drawing.Point(3, 13);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(326, 51);
             this.iconButton2.TabIndex = 8;
@@ -241,9 +242,9 @@
             this.btnAcercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAcercade.IconSize = 30;
             this.btnAcercade.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcercade.Location = new System.Drawing.Point(12, 13);
+            this.btnAcercade.Location = new System.Drawing.Point(0, 13);
             this.btnAcercade.Name = "btnAcercade";
-            this.btnAcercade.Size = new System.Drawing.Size(326, 51);
+            this.btnAcercade.Size = new System.Drawing.Size(335, 51);
             this.btnAcercade.TabIndex = 7;
             this.btnAcercade.Text = "Cierre de caja";
             this.btnAcercade.UseVisualStyleBackColor = true;
@@ -711,6 +712,27 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // btnCliente
+            // 
+            this.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.btnCliente.IconColor = System.Drawing.Color.White;
+            this.btnCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCliente.IconSize = 30;
+            this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCliente.Location = new System.Drawing.Point(3, 26);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(326, 51);
+            this.btnCliente.TabIndex = 8;
+            this.btnCliente.Text = "Clientes";
+            this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            // 
             // frmmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -727,6 +749,7 @@
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelmenuvertical.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -789,5 +812,6 @@
         private System.Windows.Forms.Timer timer;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnCliente;
     }
 }

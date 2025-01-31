@@ -190,8 +190,6 @@ namespace SuperMercado_Presentacion
             AbrirFormulario(new CierreCaja());
         }
 
-       
-
         private void btnCategorias_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new frmCategorias());
@@ -225,6 +223,11 @@ namespace SuperMercado_Presentacion
         private void iconButton2_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new frmTotaIngresadp());
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmClientes());
         }
     }
 }

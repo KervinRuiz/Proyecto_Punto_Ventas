@@ -97,7 +97,7 @@ namespace SuperMercado_Presentacion
             //validamos si el registro esta correcto para guardar en la tabla de abonos
             if (respuesta)
             {
-                MessageBox.Show("Abono agregado","Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Abono agregado","Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarCampos();
             }
             else
