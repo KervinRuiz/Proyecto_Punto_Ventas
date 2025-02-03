@@ -173,6 +173,7 @@ namespace SuperMercado_Presentacion
                     Estado = Convert.ToInt32(((OpcionCombo)cmbestado.SelectedItem).Valor) == 1 ? true : false,
                     Iva = ((OpcionCombo)cmbIVA.SelectedItem).Texto,
                     PorcentajeDeGanancia = ((OpcionCombo)cmbganancia.SelectedItem).Texto,
+                    Info_Categoria = new Categoria_Producto() { ID_Categoria = Convert.ToInt32(((OpcionCombo)cmbCategoria.SelectedItem).Valor)},
                 };
 
 

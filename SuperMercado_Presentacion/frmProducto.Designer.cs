@@ -34,6 +34,20 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panelcontenedordata = new System.Windows.Forms.Panel();
             this.dgtproductos = new System.Windows.Forms.DataGridView();
+            this.btnseleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precioventa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria_Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado_Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Alerta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Iva = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ganancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtindice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbestado = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -67,20 +81,6 @@
             this.cmbIVA = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbganancia = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnseleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precioventa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoria_Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado_Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Alerta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Iva = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ganancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelcontenedordata.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgtproductos)).BeginInit();
             this.panelcontenedorbotones.SuspendLayout();
@@ -132,7 +132,7 @@
             this.panelcontenedordata.Controls.Add(this.dgtproductos);
             this.panelcontenedordata.Location = new System.Drawing.Point(345, 178);
             this.panelcontenedordata.Name = "panelcontenedordata";
-            this.panelcontenedordata.Size = new System.Drawing.Size(1433, 618);
+            this.panelcontenedordata.Size = new System.Drawing.Size(1562, 781);
             this.panelcontenedordata.TabIndex = 48;
             // 
             // dgtproductos
@@ -185,9 +185,118 @@
             this.dgtproductos.RowHeadersWidth = 51;
             this.dgtproductos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgtproductos.RowTemplate.Height = 28;
-            this.dgtproductos.Size = new System.Drawing.Size(1433, 618);
+            this.dgtproductos.Size = new System.Drawing.Size(1562, 781);
             this.dgtproductos.TabIndex = 22;
             this.dgtproductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtproductos_CellContentClick);
+            // 
+            // btnseleccionar
+            // 
+            this.btnseleccionar.FillWeight = 124.6819F;
+            this.btnseleccionar.HeaderText = "";
+            this.btnseleccionar.MinimumWidth = 6;
+            this.btnseleccionar.Name = "btnseleccionar";
+            this.btnseleccionar.ReadOnly = true;
+            this.btnseleccionar.Visible = false;
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.MinimumWidth = 6;
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.FillWeight = 85.40709F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.FillWeight = 85.40709F;
+            this.Precio.HeaderText = "Precio Compra";
+            this.Precio.MinimumWidth = 6;
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Precioventa
+            // 
+            this.Precioventa.HeaderText = "Precio Venta";
+            this.Precioventa.MinimumWidth = 6;
+            this.Precioventa.Name = "Precioventa";
+            this.Precioventa.ReadOnly = true;
+            // 
+            // Categoria_Estado
+            // 
+            this.Categoria_Estado.HeaderText = "Categoria_Valor";
+            this.Categoria_Estado.MinimumWidth = 6;
+            this.Categoria_Estado.Name = "Categoria_Estado";
+            this.Categoria_Estado.ReadOnly = true;
+            this.Categoria_Estado.Visible = false;
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.MinimumWidth = 6;
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            this.Categoria.Visible = false;
+            // 
+            // Estado_Valor
+            // 
+            this.Estado_Valor.HeaderText = "Estado_Valor";
+            this.Estado_Valor.MinimumWidth = 6;
+            this.Estado_Valor.Name = "Estado_Valor";
+            this.Estado_Valor.ReadOnly = true;
+            this.Estado_Valor.Visible = false;
+            // 
+            // Estado
+            // 
+            this.Estado.FillWeight = 85.40709F;
+            this.Estado.HeaderText = "Estado";
+            this.Estado.MinimumWidth = 6;
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.Visible = false;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // Alerta
+            // 
+            this.Alerta.HeaderText = "Alerta";
+            this.Alerta.MinimumWidth = 6;
+            this.Alerta.Name = "Alerta";
+            this.Alerta.ReadOnly = true;
+            this.Alerta.Visible = false;
+            // 
+            // Iva
+            // 
+            this.Iva.HeaderText = "Iva";
+            this.Iva.MinimumWidth = 6;
+            this.Iva.Name = "Iva";
+            this.Iva.ReadOnly = true;
+            // 
+            // Ganancia
+            // 
+            this.Ganancia.HeaderText = "Ganancia";
+            this.Ganancia.MinimumWidth = 6;
+            this.Ganancia.Name = "Ganancia";
+            this.Ganancia.ReadOnly = true;
             // 
             // txtindice
             // 
@@ -343,9 +452,9 @@
             this.panelcontenedorbotones.Controls.Add(this.btneditar);
             this.panelcontenedorbotones.Controls.Add(this.btnGuardar);
             this.panelcontenedorbotones.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelcontenedorbotones.Location = new System.Drawing.Point(338, 818);
+            this.panelcontenedorbotones.Location = new System.Drawing.Point(338, 981);
             this.panelcontenedorbotones.Name = "panelcontenedorbotones";
-            this.panelcontenedorbotones.Size = new System.Drawing.Size(1498, 105);
+            this.panelcontenedorbotones.Size = new System.Drawing.Size(1627, 105);
             this.panelcontenedorbotones.TabIndex = 37;
             // 
             // btnexel
@@ -362,7 +471,7 @@
             this.btnexel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnexel.IconSize = 25;
             this.btnexel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexel.Location = new System.Drawing.Point(1159, 23);
+            this.btnexel.Location = new System.Drawing.Point(1288, 23);
             this.btnexel.Name = "btnexel";
             this.btnexel.Size = new System.Drawing.Size(281, 49);
             this.btnexel.TabIndex = 52;
@@ -400,7 +509,6 @@
             this.label6.Size = new System.Drawing.Size(96, 23);
             this.label6.TabIndex = 35;
             this.label6.Text = "Categoria";
-            this.label6.Visible = false;
             // 
             // label4
             // 
@@ -434,7 +542,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 923);
+            this.label1.Size = new System.Drawing.Size(338, 1086);
             this.label1.TabIndex = 30;
             // 
             // label7
@@ -478,7 +586,6 @@
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(295, 36);
             this.cmbCategoria.TabIndex = 55;
-            this.cmbCategoria.Visible = false;
             // 
             // txtbuscar
             // 
@@ -761,121 +868,12 @@
             this.label14.TabIndex = 63;
             this.label14.Text = "Ganancia";
             // 
-            // btnseleccionar
-            // 
-            this.btnseleccionar.FillWeight = 124.6819F;
-            this.btnseleccionar.HeaderText = "";
-            this.btnseleccionar.MinimumWidth = 6;
-            this.btnseleccionar.Name = "btnseleccionar";
-            this.btnseleccionar.ReadOnly = true;
-            this.btnseleccionar.Visible = false;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "id";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.MinimumWidth = 6;
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.FillWeight = 85.40709F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 6;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.FillWeight = 85.40709F;
-            this.Precio.HeaderText = "Precio Compra";
-            this.Precio.MinimumWidth = 6;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Precioventa
-            // 
-            this.Precioventa.HeaderText = "Precio Venta";
-            this.Precioventa.MinimumWidth = 6;
-            this.Precioventa.Name = "Precioventa";
-            this.Precioventa.ReadOnly = true;
-            // 
-            // Categoria_Estado
-            // 
-            this.Categoria_Estado.HeaderText = "Categoria_Valor";
-            this.Categoria_Estado.MinimumWidth = 6;
-            this.Categoria_Estado.Name = "Categoria_Estado";
-            this.Categoria_Estado.ReadOnly = true;
-            this.Categoria_Estado.Visible = false;
-            // 
-            // Categoria
-            // 
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.MinimumWidth = 6;
-            this.Categoria.Name = "Categoria";
-            this.Categoria.ReadOnly = true;
-            this.Categoria.Visible = false;
-            // 
-            // Estado_Valor
-            // 
-            this.Estado_Valor.HeaderText = "Estado_Valor";
-            this.Estado_Valor.MinimumWidth = 6;
-            this.Estado_Valor.Name = "Estado_Valor";
-            this.Estado_Valor.ReadOnly = true;
-            this.Estado_Valor.Visible = false;
-            // 
-            // Estado
-            // 
-            this.Estado.FillWeight = 85.40709F;
-            this.Estado.HeaderText = "Estado";
-            this.Estado.MinimumWidth = 6;
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            this.Estado.Visible = false;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 6;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // Alerta
-            // 
-            this.Alerta.HeaderText = "Alerta";
-            this.Alerta.MinimumWidth = 6;
-            this.Alerta.Name = "Alerta";
-            this.Alerta.ReadOnly = true;
-            this.Alerta.Visible = false;
-            // 
-            // Iva
-            // 
-            this.Iva.HeaderText = "Iva";
-            this.Iva.MinimumWidth = 6;
-            this.Iva.Name = "Iva";
-            this.Iva.ReadOnly = true;
-            // 
-            // Ganancia
-            // 
-            this.Ganancia.HeaderText = "Ganancia";
-            this.Ganancia.MinimumWidth = 6;
-            this.Ganancia.Name = "Ganancia";
-            this.Ganancia.ReadOnly = true;
-            // 
             // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1836, 923);
+            this.ClientSize = new System.Drawing.Size(1965, 1086);
             this.Controls.Add(this.cmbganancia);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);

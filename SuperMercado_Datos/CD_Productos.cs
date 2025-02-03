@@ -162,6 +162,7 @@ namespace SuperMercado_Datos
                     cmd.Parameters.AddWithValue("IVA", obj.Iva);
                     cmd.Parameters.AddWithValue("Ganancia", obj.PorcentajeDeGanancia);
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
+                    cmd.Parameters.AddWithValue("Categoria", obj.Info_Categoria.ID_Categoria);
                     //Declaramos los parametros de salida
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
